@@ -76,14 +76,4 @@ if !(_spawn_marker isEqualTo "") then {
 
     combat_readiness = (combat_readiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
-
-    {
-        if (local _x) then {
-            _headless_client = [] call KPLIB_fnc_getLessLoadedHC;
-            if (!isNull _headless_client) then {
-                _x setGroupOwner (owner _headless_client);
-            };
-        };
-        sleep 1;
-    } forEach _bg_groups;
 };
