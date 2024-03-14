@@ -54,7 +54,14 @@ while {(count (units _para_group)) < 8} do {
     [opfor_paratrooper, markerPos _spawnsector, _para_group] call KPLIB_fnc_createManagedUnit;
 };
 
-{removeBackpack _x; _x addBackPack "B_parachute"; _x assignAsCargo _newvehicle; _x moveInCargo _newvehicle;} forEach (units _para_group);
+// Crow changes - Trying to fix the AI wanting to land to shuffle seats or the like. Moving them into helicopter, then assigning them their current seat, and at the end order them to get in
+{
+    removeBackpack _x; 
+    _x addBackPack "B_parachute"; 
+    _x moveInCargo _newvehicle;
+    _x assignAsCargoIndex [_newvehicle, _newvehicle getCargoIndex _x]; 
+} forEach (units _para_group);
+units _para_group orderGetIn true;
 
 while {(count (waypoints _pilot_group)) != 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
 while {(count (waypoints _para_group)) != 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
