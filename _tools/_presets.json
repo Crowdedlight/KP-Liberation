@@ -133,16 +133,16 @@
     },
     {
         "sourceFolder": "kp_liberation.pja310",
-        "missionName": "kp_liberation",
+        "missionName": "kp_liberation_warroom",
         "map": "pja310",
         "mapDisplay": "Al Rayak",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_preset_blufor": 6,
-            "KP_liberation_preset_opfor": 2,
-            "KP_liberation_preset_resistance": 0,
-            "KP_liberation_preset_civilians": 0,
-            "KP_liberation_arsenal": 0
+            "KP_liberation_preset_blufor": 2,
+            "KP_liberation_preset_opfor": 5,
+            "KP_liberation_preset_resistance": 3,
+            "KP_liberation_preset_civilians": 2,
+            "KP_liberation_arsenal": 3
         },
         "workshopId": "934734065"
     },
