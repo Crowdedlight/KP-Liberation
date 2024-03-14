@@ -29,8 +29,15 @@ if (isNull _chopper_type) then {
     createVehicleCrew _newvehicle;
     sleep 0.1;
 
+    // make pilot and crew and set behaviour + skill for pilots
     _pilot_group = createGroup [GRLIB_side_enemy, true];
-    (crew _newvehicle) joinSilent _pilot_group;
+    crew _newvehicle joinSilent _pilot_group;
+    _pilot_group addVehicle _newvehicle;
+    _pilot_group selectLeader commander _newvehicle;
+    _pilot_group allowFleeing 0;
+    _pilot_group setBehaviour "CARELESS";
+    _newvehicle flyInHeight 100;
+    driver _newvehicle setSkill 1;
 
     _newvehicle addMPEventHandler ["MPKilled", {
         params ["_unit", "_killer"];
@@ -58,8 +65,8 @@ while {(count (units _para_group)) < 8} do {
 {
     removeBackpack _x; 
     _x addBackPack "B_parachute"; 
+    _x assignAsCargoIndex [_newvehicle, _forEachIndex]; 
     _x moveInCargo _newvehicle;
-    _x assignAsCargoIndex [_newvehicle, _newvehicle getCargoIndex _x]; 
 } forEach (units _para_group);
 units _para_group orderGetIn true;
 
@@ -67,10 +74,8 @@ while {(count (waypoints _pilot_group)) != 0} do {deleteWaypoint ((waypoints _pi
 while {(count (waypoints _para_group)) != 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
 sleep 0.2;
 {_x doFollow leader _pilot_group} forEach units _pilot_group;
-{_x doFollow leader _para_group} forEach units _para_group;
+// {_x doFollow leader _para_group} forEach units _para_group;
 sleep 0.2;
-
-_newvehicle flyInHeight 100;
 
 _waypoint = _pilot_group addWaypoint [_targetpos, 25];
 _waypoint setWaypointType "MOVE";
