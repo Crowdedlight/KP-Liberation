@@ -19,7 +19,13 @@ if (isNull _chopper_type) then {
         _chopper_type = selectRandom opfor_choppers;
     };
 
-    _newvehicle = createVehicle [_chopper_type, markerpos _spawnsector, [], 0, "FLY"];
+    // Crow addition 
+    // find a random pos around our spawn location with minimum 10m distance to all other units.
+    private _randomPosWithBuffer = [[_spawnsector], [], { 
+        (markerpos _spawnsector) distance (nearestObject [markerpos _spawnsector, "Air"]) > 10;
+     }] call BIS_fnc_randomPos; 
+
+    _newvehicle = createVehicle [_chopper_type, _randomPosWithBuffer, [], 0, "FLY"];
     createVehicleCrew _newvehicle;
     sleep 0.1;
 
@@ -48,7 +54,7 @@ while {(count (units _para_group)) < 8} do {
     [opfor_paratrooper, markerPos _spawnsector, _para_group] call KPLIB_fnc_createManagedUnit;
 };
 
-{removeBackpack _x; _x addBackPack "B_parachute"; _x moveInCargo _newvehicle;} forEach (units _para_group);
+{removeBackpack _x; _x addBackPack "B_parachute"; _x assignAsCargo _newvehicle; _x moveInCargo _newvehicle;} forEach (units _para_group);
 
 while {(count (waypoints _pilot_group)) != 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
 while {(count (waypoints _para_group)) != 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
