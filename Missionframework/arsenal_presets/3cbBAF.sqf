@@ -80,7 +80,8 @@ GRLIB_arsenal_weapons = [
 	"rhs_weap_fim92",									//RHS Stinger
 	"rhs_weap_m136",									//RHS M136, in case we find 3CB ones lacking
 	"rhs_weap_m136_hedp",								//RHS M136, see above
-	"rhs_weap_m136_hp"									//RHS M136, see above
+	"rhs_weap_m136_hp",									//RHS M136, see above
+    "rhs_weap_l1a1"										//RHS SLR
 	//Added by TheWarRoom-end
 ];
 
@@ -192,6 +193,7 @@ GRLIB_arsenal_magazines = [
 	"MRAWS_HEAT_F",										//HEAT75 for MAAWS
 	"rhs_fgm148_magazine_AT",							//RHS Jav Missile
 	"rhs_fim92_mag",									//RHS Stinger Missile
+    "Titan_AT",											//Titan AT for the BAF JAV	
 
 	//No Additional MAAWS Ammo so no Funny Rounds(tm)	
 	"UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells",					//3CB Airburst
@@ -220,7 +222,12 @@ GRLIB_arsenal_magazines = [
 	"ACE_Chemlight_Hi-White",
 	"ACE_Chemlight_Hi-Yellow",
 	"rhsusf_m112x4_mag",								//ACE M112 Bundle
-	"rhsusf_m112_mag"									//ACE M112 Single 
+	"rhsusf_m112_mag",									//ACE M112 Single 
+
+	//50cal Ammo 
+	"ACE_5Rnd_127x99_Mag",								//Regular .50 Ammo
+	"ACE_5Rnd_127x99_AMAX_Mag",							//Whatever an AMAX is
+	"ACE_5Rnd_127x99_API_Mag"							//API
 	//Added by TheWarRoom-end
 ];
 
@@ -270,6 +277,17 @@ GRLIB_arsenal_items = [
     "UK3CB_BAF_U_Smock_MTP_DDPM",                                   // Smock MTP / Trousers DDPM [BAF]
     "UK3CB_BAF_U_Smock_MTP_DPMW",                                   // Smock MTP / Trousers DPM Wdl [BAF]
     "UK3CB_BAF_U_Smock_MTP",                                        // Smock MTP [BAF]
+
+	//Added by DWR - Newer Uniforms
+	"UK3CB_BAF_U_CombatUniform_CW_DPM",								//CW DPM
+	"UK3CB_BAF_U_CombatUniform_CW_DPM_ShortSleeve",					//CW DPM Rolled
+	"UK3CB_BAF_U_JumperUniform_CW_DPM",								//CW Jumper
+	"UK3CB_BAF_U_Smock_CW_DPM",										//CW Smock
+	"UK3CB_BAF_U_Smock_CW_DPM_OLI",									//CW Smock Olive Trousers
+	"UK3CB_BAF_U_CombatUniform_DPMJ",								//DPMJungle
+	"UK3CB_BAF_U_CombatUniform_DPMJ_ShortSleeve",					//DPMJungle Rolled
+	"UK3CB_BAF_U_CombatUniform_DPMTrop",							//DPMTropical
+	"UK3CB_BAF_U_CombatUniform_DPMTrop_ShortSleeve",				//DPMTropical Rolled
 
     // Headgear
     "UK3CB_BAF_H_Beret_AAC_Over",                                   // Beret Army Air Corps PRR Over [BAF]
@@ -592,6 +610,12 @@ GRLIB_arsenal_items = [
     "FIR_JHMCS_Type2",                                      //FIR Compatible Helmet
     "rhsusf_hgu56p_visor_mask",                             //Generic RHS Helmet to replace Pink One
     "rhsusf_ihadss",                                        //RHS Apache Helmet
+    "UK3CB_BAF_H_Beret_CSG",								//Missing Berets
+	"UK3CB_BAF_H_Beret_CSG_PRR",
+	"UK3CB_BAF_H_Beret_CSG_PRR_Over",
+	"UK3CB_BAF_H_Beret_DOL",
+	"UK3CB_BAF_H_Beret_DOL_PRR",
+	"UK3CB_BAF_H_Beret_DOL_PRR_Over",	
 	//Added by TheWarRoom-end
 
     // Facegear
@@ -878,6 +902,10 @@ GRLIB_arsenal_items = [
 	"rhsusf_acc_eotech_552",							//RHS Holo
 	"rhsusf_acc_ACOG_RMR",								//RHS ACOG w-Red Dot
 	"rhsusf_acc_ACOG_MDO",								//RHS 6x 
+    "rhsusf_acc_su230",									//Scopes for BA
+	"rhsusf_acc_su230a",								//^
+	"rhsgref_acc_l1a1_l2a2",							//Scopes for RHSSLR
+	"rhsgref_acc_l1a1_anpvs2",							//Scopes for RHSSLR
 	//Added by TheWarRoom-end
 
     // Vanilla Standard Items
@@ -994,6 +1022,8 @@ GRLIB_arsenal_items = [
     //update for latest ace items - Crowded 
     "ACE_PlottingBoard",                                            // ACE plotting board
     "acex_intelitems_notepad",                                      // ACE Notepad
+    "ACE_painkillers",												//New painkillers - AC
+
 
     // ACRE Items
     "ACRE_PRC117F",                                                 // AN/PRC-117F

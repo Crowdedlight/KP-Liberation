@@ -277,7 +277,23 @@ support_vehicles = [
     ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,200,75],                       // M977A4 Ammo
     ["B_Slingload_01_Repair_F",275,0,0],                                    // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                     // Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                      // Huron Ammo
+    ["B_Slingload_01_Ammo_F",75,200,0],                                      // Huron Ammo
+
+	//Added by DWR - Boxes for BAF Supplies
+	["UK3CB_BAF_Box_L111A1_Ammo",0,0,0],									//Resupplies for BAF Stuff
+	["UK3CB_BAF_Box_L134A1_Ammo",0,0,0],
+	["UK3CB_BAF_Box_L16_Ammo_Mixed",0,0,0],
+	["UK3CB_BAF_Box_L16_Ammo_HE",0,0,0],
+	["UK3CB_BAF_Box_L16_Ammo_Illumination",0,0,0],
+	["UK3CB_BAF_Box_L16_Ammo_Smoke",0,0,0],
+	["UK3CB_BAF_Box_L16_Ammo_WP",0,0,0],
+	["UK3CB_BAF_Box_Milan_Ammo",0,0,0],
+	["UK3CB_BAF_Box_Warrior_Ammo",0,0,0],
+	["UK3CB_BAF_Box_M6_Ammo_Mixed",0,0,0],
+	["UK3CB_BAF_Box_M6_Ammo_HE",0,0,0],
+	["UK3CB_BAF_Box_M6_Ammo_Illumination",0,0,0],
+	["UK3CB_BAF_Box_M6_Ammo_Smoke",0,0,0],
+	["UK3CB_BAF_Box_M6_Ammo_WP",0,0,0]	
 ];
 
 /*
