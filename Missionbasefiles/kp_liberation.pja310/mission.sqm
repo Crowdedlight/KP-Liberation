@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1505;
+		nextID=1558;
 	};
 	class Camera
 	{
@@ -442,11 +442,11 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={148.11665,0,232.77026};
+			position[]={20309,0,6956};
 			name="opfor_airspawn";
 			type="Empty";
 			id=7;
-			atlOffset=36.94241;
+			atlOffset=-3.3985648;
 		};
 		class Item7
 		{
@@ -3025,38 +3025,38 @@ class Mission
 		class Item180
 		{
 			dataType="Marker";
-			position[]={87.165405,-0.69149399,4127.063};
+			position[]={20051,-1,13840};
 			name="opfor_airspawn_1";
 			type="Empty";
 			id=791;
-			atlOffset=36.94241;
+			atlOffset=-29.815617;
 		};
 		class Item181
 		{
 			dataType="Marker";
-			position[]={50.615139,-0.69149399,12107.09};
+			position[]={3469,-1,20172};
 			name="opfor_airspawn_2";
 			type="Empty";
 			id=792;
-			atlOffset=36.94241;
+			atlOffset=-26.246222;
 		};
 		class Item182
 		{
 			dataType="Marker";
-			position[]={38.432098,11.664074,16700.174};
+			position[]={9852,12,20121};
 			name="opfor_airspawn_3";
 			type="Empty";
 			id=793;
-			atlOffset=36.900146;
+			atlOffset=4.4090815;
 		};
 		class Item183
 		{
 			dataType="Marker";
-			position[]={111.53091,21.666962,20391.695};
+			position[]={15186,22,20374};
 			name="opfor_airspawn_4";
 			type="Empty";
 			id=794;
-			atlOffset=36.924892;
+			atlOffset=17.913803;
 		};
 		class Item184
 		{
@@ -3106,20 +3106,20 @@ class Mission
 		class Item189
 		{
 			dataType="Marker";
-			position[]={16755.48,-0.70325089,64.705811};
+			position[]={20246,-1,1757};
 			name="opfor_airspawn_10";
 			type="Empty";
 			id=800;
-			atlOffset=36.94128;
+			atlOffset=-92.994133;
 		};
 		class Item190
 		{
 			dataType="Marker";
-			position[]={11332.011,-0.714077,70.515137};
+			position[]={20298,-1,3460};
 			name="opfor_airspawn_11";
 			type="Empty";
 			id=801;
-			atlOffset=36.94241;
+			atlOffset=-115.6586;
 		};
 		class Item191
 		{
