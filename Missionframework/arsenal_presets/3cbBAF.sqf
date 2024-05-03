@@ -177,6 +177,10 @@ GRLIB_arsenal_magazines = [
 	"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 		//RHS Tracer/EPR, may be better than BAF Tracer
 	"rhs_mag_30Rnd_556x45_Mk262_Stanag",					//RHS "Heavy" round, hits harder
 	"rhs_mag_30Rnd_556x45_Mk318_Stanag", 					//RHS Multipurpose Accurised round, AP/Soft
+	"rhs_mag_20rnd_762x51_m61_fnfal",						//RHS 762 Ammo
+	"rhs_mag_20rnd_762x51_m62_fnfal",
+	"rhs_mag_20rnd_762x51_m80_fnfal",
+	"rhs_mag_20rnd_762x51_m80a1_fnfal",
 
 	//Since BAF visual models don't show the different kind of mags, no point including more than one of each
 	"murshun_cigs_cigpack",									//Ciggies
