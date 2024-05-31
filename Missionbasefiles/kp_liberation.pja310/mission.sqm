@@ -373,7 +373,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=488;
+		items=489;
 		class Item0
 		{
 			dataType="Marker";
